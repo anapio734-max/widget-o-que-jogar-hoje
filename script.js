@@ -1,33 +1,26 @@
 async function carregarJogos() {
-    const resposta = await fetch("jogos.json");
-    return await resposta.json();
+    const response = await fetch("jogos.json");
+    const jogos = await response.json();
+    return jogos;
 }
 
-document.getElementById("sortear").addEventListener("click", async () => {
-    const categoria = document.getElementById("categoria").value;
-    const resultado = document.getElementById("resultado");
-
-    if (!categoria) {
-        resultado.innerHTML = "<p>Escolha uma categoria primeiro 🌿</p>";
-        return;
-    }
-
+async function sortearJogo() {
+    const categoriaEscolhida = document.getElementById("categoriaSelect").value;
     const jogos = await carregarJogos();
-    const filtrados = jogos.filter(j => j.categoria === categoria);
+
+    const filtrados = categoriaEscolhida === "todos"
+        ? jogos
+        : jogos.filter(jogo => jogo.categoria === categoriaEscolhida);
 
     if (filtrados.length === 0) {
-        resultado.innerHTML = "<p>Nenhum jogo encontrado nessa categoria 😢</p>";
+        document.getElementById("resultado").innerHTML = "<p>Nenhum jogo nessa categoria!</p>";
         return;
     }
 
-    // Sorteio
-    const escolhido = filtrados[Math.floor(Math.random() * filtrados.length)];
+    const sorteado = filtrados[Math.floor(Math.random() * filtrados.length)];
 
-    resultado.innerHTML = `
-        <div class="resultado-conteudo">
-            <img class="imagem-jogo" src="${escolhido.imagem}" alt="Imagem do jogo">
-            <h2>${escolhido.titulo}</h2>
-            <p style="opacity:0.7;">Categoria: ${escolhido.categoria}</p>
-        </div>
+    document.getElementById("resultado").innerHTML = `
+        <h2>${sorteado.titulo}</h2>
+        <img src="${sorteado.imagem}" alt="${sorteado.titulo}">
     `;
-});
+}
