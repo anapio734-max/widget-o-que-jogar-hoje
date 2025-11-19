@@ -1,126 +1,28 @@
-/* PALETA:
-#a6b697 (verde salvia claro)
-#7a876f (verde musgo suave)
-#88a78e (verde menta cinzado)
-#c2cea7 (verde chá leitoso)
-#88a376 (verde oliva claro)
-*/
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #f6f7f3; /* fundo bem suave */
-    font-family: "Inter", sans-serif;
-    color: #4a4f45;
-}
-
-/* CONTAINER GERAL */
-.container {
-    width: 350px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 22px;
-    border: 3px solid #c2cea7;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    transition: 0.2s ease;
-}
-
-/* TÍTULO */
-.titulo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #7a876f;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* ÍCONE AO LADO DO TÍTULO */
-.icone {
-    width: 28px;
-    height: 28px;
-    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.1));
-}
-
-/* SELECT (filtro) */
-select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 12px;
+.card {
+    background: #7a876f; /* verde acinzentado escuro */
     border: 2px solid #a6b697;
-    background: #f8faf7;
-    color: #4c5548;
-    font-size: 0.95rem;
-    outline: none;
-    transition: 0.2s ease;
+    border-radius: 16px;
+    padding: 20px;
+    color: #f6f6f1; /* texto claro para contraste */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-select:hover {
-    border-color: #88a78e;
+/* Título do widget */
+.titulo {
+    color: #c2cea7;
 }
 
-select:focus {
-    border-color: #88a376;
-}
-
-/* BOTÃO DE SORTEIO */
+/* Botão */
 button {
-    padding: 12px 18px;
     background: #88a376;
-    color: white;
-    font-weight: 600;
     border: none;
-    border-radius: 14px;
-    width: 100%;
+    padding: 10px 16px;
+    border-radius: 12px;
+    color: white;
     cursor: pointer;
-    transition: 0.2s ease;
-    font-size: 1rem;
+    transition: 0.2s;
 }
 
 button:hover {
-    background: #7a876f;
+    background: #88a78e;
 }
-
-/* CARD DO RESULTADO */
-.card {
-    width: 100%;
-    padding: 16px;
-    background: #fdfdfc;
-    border: 2px solid #a6b697;
-    border-radius: 18px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-/* IMAGEM DO JOGO */
-.imagem-jogo {
-    width: 100%;
-    height: 180px;
-    border-radius: 14px;
-    object-fit: cover;
-    border: 2px solid #c2cea7;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-}
-
-/* TÍTULO DO JOGO */
-.nome-jogo {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #7a876f;
-}
-
-/* container com imagem + texto */
-.resultado-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
