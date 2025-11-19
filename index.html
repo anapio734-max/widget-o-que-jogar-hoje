@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,23 @@
 </head>
 <body>
 
-    <!-- Bordas estéticas superiores -->
-    <img src="estetica/borda-top.png" class="borda top" alt="borda superior">
+<div class="card">
+    <h1>🎮 O que jogar hoje?</h1>
 
-    <div class="container">
+    <select id="categoriaSelect">
+        <option value="todos">Todas as categorias</option>
+        <option value="cozy">Cozy</option>
+        <option value="life-sim">Life Sim</option>
+        <option value="puzzle">Puzzle</option>
+        <option value="historia">História</option>
+    </select>
 
-        <h1 class="titulo">
-            <img src="estetica/icone-sorteio.png" class="icone" alt="ícone">
-            O que jogar hoje?
-        </h1>
+    <button onclick="sortearJogo()">Sortear</button>
 
-        <label for="categoria">Escolha o tipo de jogo:</label>
-        <select id="categoria">
-            <option value="">Selecione...</option>
-            <option value="life-sim">Life Sim</option>
-            <option value="puzzle">Puzzle</option>
-            <option value="historia">História</option>
-            <option value="cozy">Cozy</option>
-        </select>
+    <div id="resultado" class="resultado"></div>
+</div>
 
-        <button id="sortear">Sortear Jogo</button>
+<script src="script.js"></script>
 
-        <div id="resultado" class="card"></div>
-    </div>
-
-    <!-- Bordas estéticas inferiores -->
-    <img src="estetica/borda-bottom.png" class="borda bottom" alt="borda inferior">
-
-    <script src="script.js"></script>
 </body>
 </html>
