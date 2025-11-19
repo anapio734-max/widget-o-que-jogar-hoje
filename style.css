@@ -9,9 +9,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f6f7f3; /* fundo bem suave */
+    background: #c2cea7; /* fundo bem suave */
     font-family: "Inter", sans-serif;
-    color: #4a4f45;
+    color: #3c4039;
 }
 
 /* CONTAINER GERAL */
@@ -19,9 +19,9 @@ body {
     width: 350px;
     margin: 30px auto;
     padding: 20px;
-    background: #88a78e;
+    background: #8d9e90
     border-radius: 22px;
-    border: 3px solid #c2cea7;
+    border: 3px solid #2a2e2a;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
 .titulo {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #7a876f;
+    color: #1e211c;
     display: flex;
     align-items: center;
     gap: 10px;
