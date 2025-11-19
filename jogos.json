@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Stardew Valley",
+    "categoria": "cozy",
+    "imagem": "imagens/stardew.png"
+  },
+  {
+    "titulo": "The Sims 4",
+    "categoria": "life-sim",
+    "imagem": "imagens/sims4.png"
+  },
+  {
+    "titulo": "Travellers Rest",
+    "categoria": "cozy",
+    "imagem": "imagens/travellers.png"
+  },
+  {
+    "titulo": "Echoes of the Plum Grove",
+    "categoria": "cozy",
+    "imagem": "imagens/echoes.png"
+  },
+  {
+    "titulo": "Spiritfarer",
+    "categoria": "historia",
+    "imagem": "imagens/spiritfarer.png"
+  },
+  {
+    "titulo": "Chants os Sennaar",
+    "categoria": "puzzle",
+    "imagem": "imagens/chants.png"
+  },
+  {
+    "titulo": "Cozy Grove",
+    "categoria": "cozy",
+    "imagem": "imagens/cozygrove.png"
+  },
+]
