@@ -25,7 +25,7 @@
     "imagem": "imagens/spiritfarer.png"
   },
   {
-    "titulo": "Chants os Sennaar",
+    "titulo": "Chants of Sennaar",
     "categoria": "puzzle",
     "imagem": "imagens/chants.png"
   },
@@ -33,5 +33,5 @@
     "titulo": "Cozy Grove",
     "categoria": "cozy",
     "imagem": "imagens/cozygrove.png"
-  },
+  }
 ]
