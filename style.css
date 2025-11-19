@@ -1,0 +1,117 @@
+/* Paleta da Ana 🎨
+#a6b697, #7a876f, #88a78e, #c2cea7, #88a376
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #c2cea7;
+    font-family: "Georgia", serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Bordas decorativas */
+.borda {
+    width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.top {
+    margin-bottom: 10px;
+}
+
+.bottom {
+    margin-top: 10px;
+}
+
+.container {
+    background: #f9f9f6;
+    width: 360px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 2px solid #a6b697;
+
+    /* textura cozy */
+    background-image: url("estetica/textura.png");
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.titulo {
+    color: #7a876f;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.icone {
+    width: 28px;
+    height: 28px;
+}
+
+label {
+    color: #7a876f;
+    font-size: 15px;
+}
+
+select {
+    width: 100%;
+    background: #c2cea7;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #334026;
+}
+
+button {
+    width: 100%;
+    background: #88a376;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #7a876f;
+}
+
+/* Card do resultado */
+.card {
+    background: #f4f7ef;
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 14px;
+    border: 2px dashed #a6b697;
+    color: #4a5640;
+    font-size: 18px;
+    text-align: center;
+
+    /* estética do papel */
+    background-image: url("estetica/papel.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.imagem-jogo {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    border: 2px solid #a6b697;
+    object-fit: cover;
+}
