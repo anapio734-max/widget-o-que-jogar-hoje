@@ -1,125 +1,64 @@
-/* PALETA:
-#a6b697 (verde salvia claro)
-#7a876f (verde musgo suave)
-#88a78e (verde menta cinzado)
-#c2cea7 (verde chá leitoso)
-#88a376 (verde oliva claro)
-*/
-
 body {
-    margin: 0;
-    padding: 0;
-    background: #c2cea7; /* fundo bem suave */
     font-family: "Inter", sans-serif;
-    color: #3c4039;
-}
-
-/* CONTAINER GERAL */
-.container {
-    width: 350px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #8d9e90
-    border-radius: 22px;
-    border: 3px solid #2a2e2a;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    background-color: #7a876f;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
-    transition: 0.2s ease;
+    height: 100vh;
+    margin: 0;
 }
 
-/* TÍTULO */
-.titulo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #1e211c;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.card {
+    background-color: #485241; /* fundo mais escuro cozy */
+    color: #f5f5f5;
+    width: 330px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 0 14px rgba(0,0,0,0.2);
+    border: 2px solid #a6b697;
+    text-align: center;
 }
 
-/* ÍCONE AO LADO DO TÍTULO */
-.icone {
-    width: 28px;
-    height: 28px;
-    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.1));
+.card h1 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
-/* SELECT (filtro) */
-select {
+#categoriaSelect {
     width: 100%;
     padding: 10px;
-    border-radius: 12px;
-    border: 2px solid #a6b697;
-    background: #f8faf7;
-    color: #4c5548;
-    font-size: 0.95rem;
-    outline: none;
-    transition: 0.2s ease;
+    border-radius: 10px;
+    border: 2px solid #c2cea7;
+    background-color: #88a78e;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-select:hover {
-    border-color: #88a78e;
-}
-
-select:focus {
-    border-color: #88a376;
-}
-
-/* BOTÃO DE SORTEIO */
 button {
-    padding: 12px 18px;
-    background: #88a376;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 14px;
     width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #88a376;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
-    transition: 0.2s ease;
-    font-size: 1rem;
+    font-weight: bold;
 }
 
 button:hover {
-    background: #7a876f;
+    background-color: #9ab889;
 }
 
-/* CARD DO RESULTADO */
-.card {
-    width: 100%;
-    padding: 16px;
-    background: #fdfdfc;
-    border: 2px solid #a6b697;
-    border-radius: 18px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.resultado {
+    margin-top: 20px;
 }
 
-/* IMAGEM DO JOGO */
-.imagem-jogo {
-    width: 100%;
-    height: 180px;
-    border-radius: 14px;
-    object-fit: cover;
+.resultado img {
+    width: 80%;
+    border-radius: 12px;
+    margin-top: 12px;
     border: 2px solid #c2cea7;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-}
-
-/* TÍTULO DO JOGO */
-.nome-jogo {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #7a876f;
-}
-
-/* container com imagem + texto */
-.resultado-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
